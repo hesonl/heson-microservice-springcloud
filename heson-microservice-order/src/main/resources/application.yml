@@ -1,0 +1,13 @@
+server:
+    port: 8082
+spring:
+    application:
+        name: heson-microservice-order
+eureka:
+    client:
+        registerWithEureka: true
+        fetchRegister: true
+    serviceUrl:
+        defaultZone: http://127.0.0.1:8761/eureka
+    instance:
+        prefer-ip-address: true
